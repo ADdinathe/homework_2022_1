@@ -4,13 +4,14 @@ const isObject = (item) => {
     return (item && typeof item === 'object' && !Array.isArray(item));
 }
 
+// ВАРИАНТ НИЖЕ ТОЖЕ РАБОТАЕТ, КРОМЕ ПОСЛЕДНЕГО (МОЕГО) ТЕСТА
 
 // const zip = (...objects) => objects.reduceRight((res, obj) => {
 //         if (isObject(obj)){
 //             Object.assign(res, obj);
 //         }
 //         return res;
-// },objects[objects.length-1]);
+// },{});
 
 const zip = (...args) => {
 
